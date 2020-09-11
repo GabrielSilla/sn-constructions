@@ -12,6 +12,26 @@
             </div>
         </div>
     </div>
+    <div class="section" id="carousel">
+        <div class="container">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title text-titles">Conquistas</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-9">
+                  <ngb-carousel>
+                      <ng-template *ngFor="let img of imgCollection" ngbSlide>
+                        <img class="d-block" [src]="img.img" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ img.msg }}</h5>
+                        </div>
+                      </ng-template>
+                  </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section section-about-us">
         <div class="container">
             <div class="row">
@@ -21,6 +41,7 @@
                 </div>
             </div>
             <div class="separator separator-primary"></div>
+
             <div class="section-story-overview">
                 <div class="row">
                     <div class="col-md-6">
@@ -71,7 +92,7 @@
     </div>
     <div class="section section-team text-center">
         <div class="container">
-            <h2 class="title">Fundadores</h2>
+            <h2 class="title text-titles">Equipe</h2>
             <div class="team">
                 <div class="row">
                     <div class="col-md-6">
@@ -81,20 +102,23 @@
                             <p class="category text-primary">Fundador</p>
                             <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                                 <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
+                                <div class="social-media-icons">
+                                    <i class="text-primary fab fa-facebook"></i>
+                                    <i class="text-primary fab fa-instagram"></i>
+                                    <i class="text-primary fab fa-linkedin"></i>
+                                </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="team-player">
-                            <img src="assets/img/vitor.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <img src="assets/img/ezequiel.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Ezequiel Nunes</h4>
-                            <p class="category text-primary">Cofundador</p>
+                            <p class="category text-primary">Gerente</p>
                             <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                                 <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                                <div class="social-media-icons">
+                                    <i class="text-primary fab fa-facebook"></i>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -103,34 +127,14 @@
     </div>
     <div class="section section-contact-us text-center">
         <div class="container">
-            <h2 class="title">Contato</h2>
-            <p class="description">Your project is very important to us.</p>
-            <div class="row">
-                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
-                    <div class="input-group-prepend" >
-                      <span class="input-group-text">
-                          <i class="now-ui-icons users_circle-08"></i>
-                      </span>
-                    </div>
-                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus=true" (blur)="focus=false">
-                  </div>
-                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
-                    <div class="input-group-prepend" >
-                      <span class="input-group-text">
-                            <i class="now-ui-icons ui-1_email-85"></i>
-                      </span>
-                    </div>
-                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus1=true" (blur)="focus1=false">
-                  </div>
-                    <div class="textarea-container">
-                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-                    </div>
-                    <div class="send-button">
-                        <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-                    </div>
-                </div>
-            </div>
+            <h2 id="contact" class="title text-titles">Contato</h2>
+            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary">(18) 99155-1377</p></div>
+            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary">(18) 99627-9743</p></div>
+            <div class="social-media-icons contact row"><i class="text-primary fa fa-envelope mr-2"></i><p class="category text-primary">VHSNUNESCONSTRUCOES@GMAIL.COM</p></div>
+
+            <div class="social-media-icons contact mt-3"><p class="category text-titles mb-0">SN CONSTRUÇÕES</div>
+            <div class="social-media-icons contact"><p class="description">Construtora no segmento de montagem e incorporações de galpões e soluções industriais</p></div>
+
         </div>
     </div>
     <footer class="footer footer-default">
