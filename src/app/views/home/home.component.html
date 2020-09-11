@@ -15,15 +15,18 @@
     <div class="section" id="carousel">
         <div class="container">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title text-titles">Conquistas</h2>
+                <h2 class="title text-titles">Missão</h2>
+                <h5 class="description">A SN Construções é uma empresa que prima pelo trabalho com segurança e dignidade, desta forma procura agregar valor a todos, desde o colaborador, impactando inclusive a sociedade. Construímos com qualidade proporcionando conforto, tranquilidade e satisfação em cada cliente, nossa missão principal é ter a honra de sermos bem lembrados por nossas criações e obras, assim deixando nossa “marca” no planeta.</h5>
+
+                <h6 class="title text-primary mt-5">Abaixo, algumas de nossas conquistas.</h6>
             </div>
             <div class="row justify-content-center">
-                <div class="col-9">
+                <div class="col-md-8 col-sm-12">
                   <ngb-carousel>
                       <ng-template *ngFor="let img of imgCollection" ngbSlide>
                         <img class="d-block" [src]="img.img" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ img.msg }}</h5>
+                        <div class="mask">
+                            <h5 class="mask-text">{{ img.msg }}</h5>
                         </div>
                       </ng-template>
                   </ngb-carousel>
@@ -37,7 +40,7 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title text-titles">Quem somos?</h2>
-                    <h5 class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
+                    <h5 class="description">Criada no ano de 2013, a Silva & Nunes Construções teve seu início com mão de obra especializada, prestando serviços a vários clientes, deixando um legado e sendo referência no setor. Em 2019, com atualizações e mudanças, passa de Silva & Nunes para SN Construções, que atua no segmento da construção civil, tendo como foco a qualidade, rendimento e segurança, procurando acompanhar os aportes de sempre inovarmos com tecnologia, sem perder de vista a tradição das melhores técnicas e conhecimento na construção civil, respeitando sempre a segurança e o meio ambiente.</h5>
                 </div>
             </div>
             <div class="separator separator-primary"></div>
@@ -128,8 +131,8 @@
     <div class="section section-contact-us text-center">
         <div class="container">
             <h2 id="contact" class="title text-titles">Contato</h2>
-            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary">(18) 99155-1377</p></div>
-            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary">(18) 99627-9743</p></div>
+            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary"><a [href]="getLinkWhastapp('+5518991551377', 'Olá, vim pelo site da SN Construcoes.')" target="_blank">(18) 99155-1377</a></p></div>
+            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary"><a [href]="getLinkWhastapp('+5518996279743', 'Olá, vim pelo site da SN Construcoes.')" target="_blank">(18) 99627-9743</a></p></div>
             <div class="social-media-icons contact row"><i class="text-primary fa fa-envelope mr-2"></i><p class="category text-primary">VHSNUNESCONSTRUCOES@GMAIL.COM</p></div>
 
             <div class="social-media-icons contact mt-3"><p class="category text-titles mb-0">SN CONSTRUÇÕES</div>

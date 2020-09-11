@@ -39,3 +39,42 @@
     display: flex;
     place-items: baseline;
 }
+
+.mask {
+    height: 25%;
+    width: 100%;
+    z-index: 99999;
+    background-color: black;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 0px;
+    opacity: 75%;
+}
+
+.mask-text {
+    bottom: 20px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .mask {
+        height: 37%;
+    }
+
+    .mask-text {
+        font-size: x-small;
+        bottom: 20px;
+        position: absolute;
+        left: 8%;
+        right: 8%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .mask {
+        height: 100%;
+    }
+}
