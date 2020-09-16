@@ -21,12 +21,13 @@
                 <h6 class="title text-primary mt-5">Abaixo, algumas de nossas conquistas.</h6>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-md-10 col-sm-12">
                   <ngb-carousel>
                       <ng-template *ngFor="let img of imgCollection" ngbSlide>
-                        <img class="d-block" [src]="img.img" alt="First slide">
+                        <a [href]="img.href"><img class="d-block" [src]="img.img" alt="First slide"></a>
                         <div class="mask">
                             <h5 class="mask-text">{{ img.msg }}</h5>
+                            <a class="mask-link" [href]="img.href">Saiba mais.</a>
                         </div>
                       </ng-template>
                   </ngb-carousel>
@@ -44,53 +45,6 @@
                 </div>
             </div>
             <div class="separator separator-primary"></div>
-
-            <div class="section-story-overview">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="obra1">
-                            <div class="custom-image-container image-left" style="background-image: url('assets/img/obra3.jpg')"></div>
-                            <h3 class="text-titles">So what does the new record for the lowest level of winter ice actually mean</h3>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                            <p>
-                                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
-                            </p>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <!-- First image on the right side, above the article -->
-                        <div class="obra3">
-                            <div class="custom-image-container image-right" style="background-image: url('assets/img/obra1.png')"></div>
-                            <h3 class="text-titles">So what does the new record for the lowest level of winter ice actually mean</h3>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                            <p>
-                                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
-                            </p>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">                        
-                        <div class="obra2">
-                            <div class="custom-image-container" style="background-image: url('assets/img/obra2.jpg')"></div>
-                            <h3 class="text-titles">So what does the new record for the lowest level of winter ice actually mean</h3>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                            <p>
-                                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
-                            </p>
-                            <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="section section-team text-center">
@@ -103,12 +57,11 @@
                             <img src="assets/img/vitor.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Vitor Nunes</h4>
                             <p class="category text-primary">Fundador</p>
-                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                            <p class="description">Estudante de engenharia-civil, possui ampla experiência em obras, concluiu várias construções trabalhando em Assis e região.</p>
                                 <div class="social-media-icons">
-                                    <i class="text-primary fab fa-facebook"></i>
-                                    <i class="text-primary fab fa-instagram"></i>
-                                    <i class="text-primary fab fa-linkedin"></i>
+                                    <a href="https://www.facebook.com/vitorhsn27" target="_blank"><i class="text-primary fab fa-facebook icon"></i></a>
+                                    <a href="https://www.instagram.com/vitorhsn27/" target="_blank"><i class="text-primary fab fa-instagram icon"></i></a>
+                                    <a href="https://www.linkedin.com/in/victor-nunes-94860b1b2" target="_blank"><i class="text-primary fab fa-linkedin icon"></i></a>
                                 </div>
                         </div>
                     </div>
@@ -117,10 +70,9 @@
                             <img src="assets/img/ezequiel.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Ezequiel Nunes</h4>
                             <p class="category text-primary">Gerente</p>
-                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <div class="social-media-icons">
-                                    <i class="text-primary fab fa-facebook"></i>
+                            <p class="description">Eencarregado de obras, construtor e mestre de obras, possui 25 anos de experiência e conhecimento na construção civil, construiu um nome e reputação na cidade de Assis e Região, dando qualidade e rendimento em todas suas obras.</p>
+                                <div class="social-media-icons icon">
+                                    <a href="https://www.facebook.com/ezequiel.nunes.79" target="_blank"><i class="text-primary fab fa-facebook"></i></a>
                                 </div>
                         </div>
                     </div>
@@ -128,17 +80,8 @@
             </div>
         </div>
     </div>
-    <div class="section section-contact-us text-center">
-        <div class="container">
-            <h2 id="contact" class="title text-titles">Contato</h2>
-            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary"><a [href]="getLinkWhastapp('+5518991551377', 'Olá, vim pelo site da SN Construcoes.')" target="_blank">(18) 99155-1377</a></p></div>
-            <div class="social-media-icons contact row"><i class="text-primary fab fa-whatsapp mr-2"></i><p class="category text-primary"><a [href]="getLinkWhastapp('+5518996279743', 'Olá, vim pelo site da SN Construcoes.')" target="_blank">(18) 99627-9743</a></p></div>
-            <div class="social-media-icons contact row"><i class="text-primary fa fa-envelope mr-2"></i><p class="category text-primary">VHSNUNESCONSTRUCOES@GMAIL.COM</p></div>
-
-            <div class="social-media-icons contact mt-3"><p class="category text-titles mb-0">SN CONSTRUÇÕES</div>
-            <div class="social-media-icons contact"><p class="description">Construtora no segmento de montagem e incorporações de galpões e soluções industriais</p></div>
-
-        </div>
+    <div class="section section-contact-us text-center p-0">
+        <app-contact></app-contact>
     </div>
     <footer class="footer footer-default">
         <div class="container">

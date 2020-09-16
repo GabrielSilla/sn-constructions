@@ -494,6 +494,106 @@
     padding-bottom: 0;
 }
 
+.carousel-control-next-icon {
+    color: black;
+}
+
+.carousel-control-prev-icon {
+    color: black;
+}
+
+.icon {
+    margin-left: 20px;
+    transform: scale(1.5);
+}
+
+.text-titles {
+   color: rgb(15 39 74);
+}
+
+.custom-image-container {
+    height: 335px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.obra2 {
+    position: relative;
+    margin-top: 50px;
+}
+
+.obra3 {
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    place-items: baseline;
+}
+
+.mask {
+    height: 25%;
+    width: 100%;
+    z-index: 99999;
+    background-color: black;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 0px;
+    opacity: 75%;
+}
+
+.mask-text {
+    bottom: 30px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+.mask-link {
+    margin-top: 10px;
+    bottom: 35px;
+}
+
+.bg-theme {
+    background-color: #0f274a;
+}
+
+.flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+    .mask {
+        height: 43%;
+    }
+
+    .mask-link {
+        font-size: x-small;
+        margin-top: 10px;
+        bottom: 35px;
+    }
+
+    .mask-text {
+        font-size: x-small;
+        bottom: 20px;
+        position: absolute;
+        left: 8%;
+        right: 8%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .mask {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .section-navbars .navbar-collapse {
         display: none !important;

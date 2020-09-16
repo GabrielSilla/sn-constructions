@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @Component({
@@ -7,6 +7,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+    @Input() colorOnScroll = '0';
+
     private toggleButton: any;
     private sidebarVisible: boolean;
 
@@ -53,5 +55,10 @@ export class NavbarComponent implements OnInit {
         else {
             return false;
         }
+    }
+
+    scrollDown(event) {
+        event.preventDefault();
+        window.scrollTo(0, document.body.scrollHeight);
     }
 }

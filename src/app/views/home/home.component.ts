@@ -12,12 +12,9 @@ export class HomeComponent implements OnInit {
   focus1;
 
   imgCollection = [
-    {img: 'assets/img/toyota/toyota01.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'},
-    {img: 'assets/img/toyota/toyota02.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'},
-    {img: 'assets/img/toyota/toyota04.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'},
-    {img: 'assets/img/toyota/toyota05.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'},
-    {img: 'assets/img/toyota/toyota06.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'},
-    {img: 'assets/img/toyota/toyota07.jpg', msg: 'For a start, it does not automatically follow that a record amount of ice will melt this summer'}
+    {img: 'assets/img/toyota/toyota01.jpg', msg: 'A SN Construções já atua no mercado desde 2014, desde então, a Toyota foi uma de nossas maiores participações.', href: '/toyota'},
+    {img: 'assets/img/comasa/comasa01.jpg', msg: 'No ano de 2016 a SN Construções participou da obra e edificação do prédio da Volkswagem Comasa.', href: '/comasa'},
+    {img: 'assets/img/regional-telhas/regional01.jpg', msg: 'Ainda em 2016 a SN Construções participou de uma obra desafiadora no subsolo da Regional Telhas.', href: '/regional-telhas'}
   ];
 
   constructor() { }
